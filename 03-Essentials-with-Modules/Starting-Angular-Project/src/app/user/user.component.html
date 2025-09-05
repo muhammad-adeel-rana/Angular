@@ -1,0 +1,8 @@
+<app-card>
+    <div>
+        <button [class.active]="selected" (click)="onSelectUser()">
+            <img [src]="imagePath" [alt]="user.name"> <!-- property binding -->
+            <span>{{ user.name }}</span> <!-- string Interpolation -->
+        </button>
+    </div>
+</app-card>
